@@ -15,7 +15,7 @@
   <string name="service_release_lock">Release Lock</string>
 
   <string name="setup_info">Ergo Mixer</string>
-  <string name="setup_next">start the Ergo Mixer</string>
+  <string name="setup_next">start the mixer</string>
   <string name="setup_setup_method">Select your installation method</string>
   <string name="setup_online">Online Setup</string>
   <string name="setup_local">Local Zip File Setup</string>

@@ -124,22 +124,25 @@
   </LinearLayout>
 
   <ImageView
-    android:id="@+id/imageView8"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_alignParentStart="true"
-    android:layout_alignParentTop="true"
-    android:layout_marginStart="0dp"
-    android:layout_marginTop="58dp"
-    app:srcCompat="@mipmap/ic_launcher_neoterm_round"/>
+      android:id="@+id/imageView8"
+      android:layout_width="450dp"
+      android:layout_height="553dp"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentEnd="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginStart="54dp"
+      android:layout_marginTop="50dp"
+      android:layout_marginEnd="61dp"
+      app:srcCompat="@mipmap/ic_launcher_neoterm_round" />
 
   <ImageView
-    android:id="@+id/imageView9"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentStart="true"
-    android:layout_alignParentBottom="true"
-    android:layout_marginBottom="106dp"
-    app:srcCompat="@drawable/banner"/>
+      android:id="@+id/imageView3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginBottom="187dp"
+      app:srcCompat="@drawable/banner" />
 
 </RelativeLayout>
