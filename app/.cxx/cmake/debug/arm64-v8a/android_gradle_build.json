@@ -1,20 +1,20 @@
 {
   "stringTable": {},
   "buildFiles": [
-    "/Users/mike/Documents/GitHub/ErgoNode/app/CMakeLists.txt"
+    "/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/CMakeLists.txt"
   ],
   "cleanCommandsComponents": [
     [
       "/Users/mike/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
       "-C",
-      "/Users/mike/Documents/GitHub/ErgoNode/app/.cxx/cmake/debug/arm64-v8a",
+      "/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/.cxx/cmake/debug/arm64-v8a",
       "clean"
     ]
   ],
   "buildTargetsCommandComponents": [
     "/Users/mike/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
     "-C",
-    "/Users/mike/Documents/GitHub/ErgoNode/app/.cxx/cmake/debug/arm64-v8a",
+    "/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/.cxx/cmake/debug/arm64-v8a",
     "{LIST_OF_TARGETS_TO_BUILD}"
   ],
   "libraries": {
@@ -22,13 +22,13 @@
       "buildCommandComponents": [
         "/Users/mike/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
         "-C",
-        "/Users/mike/Documents/GitHub/ErgoNode/app/.cxx/cmake/debug/arm64-v8a",
+        "/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/.cxx/cmake/debug/arm64-v8a",
         "neoterm"
       ],
       "buildType": "debug",
       "abi": "arm64-v8a",
       "artifactName": "neoterm",
-      "output": "/Users/mike/Documents/GitHub/ErgoNode/app/build/intermediates/cmake/debug/obj/arm64-v8a/libneoterm.so",
+      "output": "/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/build/intermediates/cmake/debug/obj/arm64-v8a/libneoterm.so",
       "runtimeFiles": []
     }
   },

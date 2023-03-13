@@ -6,12 +6,12 @@
     "deprecated": false,
     "default": true
   },
-  "originalCxxBuildFolder": "/Users/mike/Documents/GitHub/ErgoNode/app/.cxx/cmake/debug/arm64-v8a",
-  "cxxBuildFolder": "/Users/mike/Documents/GitHub/ErgoNode/app/.cxx/cmake/debug/arm64-v8a",
+  "originalCxxBuildFolder": "/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/.cxx/cmake/debug/arm64-v8a",
+  "cxxBuildFolder": "/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/.cxx/cmake/debug/arm64-v8a",
   "abiPlatformVersion": 26,
   "cmake": {
-    "cmakeWrappingBaseFolder": "/Users/mike/Documents/GitHub/ErgoNode/app/.cxx/cxx/debug/arm64-v8a",
-    "cmakeArtifactsBaseFolder": "/Users/mike/Documents/GitHub/ErgoNode/app/.cxx/cmake/debug/arm64-v8a",
+    "cmakeWrappingBaseFolder": "/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/.cxx/cxx/debug/arm64-v8a",
+    "cmakeArtifactsBaseFolder": "/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/.cxx/cmake/debug/arm64-v8a",
     "effectiveConfiguration": {
       "name": "traditional-android-studio-cmake-environment",
       "description": "Composite reified CMakeSettings configuration",
@@ -19,7 +19,7 @@
       "inheritEnvironments": [
         "ndk"
       ],
-      "buildRoot": "/Users/mike/Documents/GitHub/ErgoNode/app/.cxx/cmake/debug/arm64-v8a",
+      "buildRoot": "/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/.cxx/cmake/debug/arm64-v8a",
       "cmakeToolchain": "/Users/mike/Library/Android/sdk/ndk/21.4.7075529/build/cmake/android.toolchain.cmake",
       "cmakeExecutable": "/Users/mike/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake",
       "variables": [
@@ -29,7 +29,7 @@
         },
         {
           "name": "CMAKE_FIND_ROOT_PATH",
-          "value": "/Users/mike/Documents/GitHub/ErgoNode/app/.cxx/cmake/debug/prefab/arm64-v8a/prefab"
+          "value": "/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/.cxx/cmake/debug/prefab/arm64-v8a/prefab"
         },
         {
           "name": "CMAKE_BUILD_TYPE",
@@ -65,11 +65,11 @@
         },
         {
           "name": "CMAKE_LIBRARY_OUTPUT_DIRECTORY",
-          "value": "/Users/mike/Documents/GitHub/ErgoNode/app/build/intermediates/cmake/debug/obj/arm64-v8a"
+          "value": "/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/build/intermediates/cmake/debug/obj/arm64-v8a"
         },
         {
           "name": "CMAKE_RUNTIME_OUTPUT_DIRECTORY",
-          "value": "/Users/mike/Documents/GitHub/ErgoNode/app/build/intermediates/cmake/debug/obj/arm64-v8a"
+          "value": "/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/build/intermediates/cmake/debug/obj/arm64-v8a"
         },
         {
           "name": "CMAKE_MAKE_PROGRAM",
@@ -85,7 +85,7 @@
         }
       ]
     },
-    "cmakeServerLogFile": "/Users/mike/Documents/GitHub/ErgoNode/app/.cxx/cmake/debug/arm64-v8a/cmake_server_log.txt"
+    "cmakeServerLogFile": "/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/.cxx/cmake/debug/arm64-v8a/cmake_server_log.txt"
   },
   "variant": {
     "buildSystemArgumentList": [],
@@ -94,8 +94,8 @@
       "-std\u003dc++11"
     ],
     "variantName": "debug",
-    "objFolder": "/Users/mike/Documents/GitHub/ErgoNode/app/build/intermediates/cmake/debug/obj",
-    "soFolder": "/Users/mike/Documents/GitHub/ErgoNode/app/build/intermediates/cmake/debug/lib",
+    "objFolder": "/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/build/intermediates/cmake/debug/obj",
+    "soFolder": "/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/build/intermediates/cmake/debug/lib",
     "isDebuggableEnabled": true,
     "validAbiList": [
       "ARM64_V8A"
@@ -104,13 +104,13 @@
     "implicitBuildTargetSet": [],
     "cmakeSettingsConfiguration": "android-gradle-plugin-predetermined-name",
     "module": {
-      "cxxFolder": "/Users/mike/Documents/GitHub/ErgoNode/app/.cxx",
+      "cxxFolder": "/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/.cxx",
       "splitsAbiFilterSet": [],
-      "intermediatesFolder": "/Users/mike/Documents/GitHub/ErgoNode/app/build/intermediates",
+      "intermediatesFolder": "/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/build/intermediates",
       "gradleModulePathName": ":app",
-      "moduleRootFolder": "/Users/mike/Documents/GitHub/ErgoNode/app",
-      "moduleBuildFile": "/Users/mike/Documents/GitHub/ErgoNode/app/build.gradle",
-      "makeFile": "/Users/mike/Documents/GitHub/ErgoNode/app/CMakeLists.txt",
+      "moduleRootFolder": "/Users/mike/Documents/GitHub/ErgoMixerAndroid/app",
+      "moduleBuildFile": "/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/build.gradle",
+      "makeFile": "/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/CMakeLists.txt",
       "buildSystem": "CMAKE",
       "ndkFolder": "/Users/mike/Library/Android/sdk/ndk/21.4.7075529",
       "ndkVersion": "21.4.7075529",
@@ -196,23 +196,22 @@
         "SYSTEM": {}
       },
       "project": {
-        "rootBuildGradleFolder": "/Users/mike/Documents/GitHub/ErgoNode",
-        "cxxFolder": "/Users/mike/Documents/GitHub/ErgoNode/.cxx",
-        "compilerSettingsCacheFolder": "/Users/mike/Documents/GitHub/ErgoNode/.cxx",
+        "rootBuildGradleFolder": "/Users/mike/Documents/GitHub/ErgoMixerAndroid",
+        "cxxFolder": "/Users/mike/Documents/GitHub/ErgoMixerAndroid/.cxx",
+        "compilerSettingsCacheFolder": "/Users/mike/Documents/GitHub/ErgoMixerAndroid/.cxx",
         "sdkFolder": "/Users/mike/Library/Android/sdk",
         "isNativeCompilerSettingsCacheEnabled": false,
         "isBuildOnlyTargetAbiEnabled": true,
-        "ideBuildTargetAbi": "arm64-v8a,armeabi-v7a,armeabi",
         "isCmakeBuildCohabitationEnabled": false,
         "isPrefabEnabled": false,
         "isV2NativeModelEnabled": true
       },
       "nativeBuildOutputLevel": "QUIET"
     },
-    "prefabDirectory": "/Users/mike/Documents/GitHub/ErgoNode/app/.cxx/cmake/debug/prefab"
+    "prefabDirectory": "/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/.cxx/cmake/debug/prefab"
   },
   "buildSettings": {
     "environmentVariables": []
   },
-  "prefabFolder": "/Users/mike/Documents/GitHub/ErgoNode/app/.cxx/cmake/debug/prefab/arm64-v8a"
+  "prefabFolder": "/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/.cxx/cmake/debug/prefab/arm64-v8a"
 }

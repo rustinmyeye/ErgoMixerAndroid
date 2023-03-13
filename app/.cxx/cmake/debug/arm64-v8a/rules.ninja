@@ -42,7 +42,7 @@ rule CXX_SHARED_LIBRARY_LINKER__neoterm
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /Users/mike/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/mike/Documents/GitHub/ErgoNode/app -B/Users/mike/Documents/GitHub/ErgoNode/app/.cxx/cmake/debug/arm64-v8a
+  command = /Users/mike/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/mike/Documents/GitHub/ErgoMixerAndroid/app -B/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/.cxx/cmake/debug/arm64-v8a
   description = Re-running CMake...
   generator = 1
 

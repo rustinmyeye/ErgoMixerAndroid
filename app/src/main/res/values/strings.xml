@@ -1,5 +1,5 @@
 <resources>
-  <string name="app_name">Ergo Node</string>
+  <string name="app_name">Ergo Mixer</string>
   <string name="copy_text">Copy</string>
   <string name="paste_text">Paste</string>
   <string name="super_paste_text">Super Paste</string>
@@ -14,8 +14,8 @@
   <string name="service_acquire_lock">Acquire Lock</string>
   <string name="service_release_lock">Release Lock</string>
 
-  <string name="setup_info">Ergo Node</string>
-  <string name="setup_next">start the node</string>
+  <string name="setup_info">Ergo Mixer</string>
+  <string name="setup_next">start the Ergo Mixer</string>
   <string name="setup_setup_method">Select your installation method</string>
   <string name="setup_online">Online Setup</string>
   <string name="setup_local">Local Zip File Setup</string>

@@ -1,1 +1,1 @@
-/Users/mike/Documents/GitHub/ErgoNode/app/build/intermediates/cmake/debug/obj/arm64-v8a
+/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/build/intermediates/cmake/debug/obj/arm64-v8a

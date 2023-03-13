@@ -1,7 +1,7 @@
 [
 {
-  "directory": "/Users/mike/Documents/GitHub/ErgoNode/app/.cxx/cmake/debug/arm64-v8a",
-  "command": "/Users/mike/Library/Android/sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/mike/Library/Android/sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/mike/Library/Android/sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Dneoterm_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/neoterm.dir/src/main/cpp/neoterm.cpp.o -c /Users/mike/Documents/GitHub/ErgoNode/app/src/main/cpp/neoterm.cpp",
-  "file": "/Users/mike/Documents/GitHub/ErgoNode/app/src/main/cpp/neoterm.cpp"
+  "directory": "/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/.cxx/cmake/debug/arm64-v8a",
+  "command": "/Users/mike/Library/Android/sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android26 --gcc-toolchain=/Users/mike/Library/Android/sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/mike/Library/Android/sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Dneoterm_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/neoterm.dir/src/main/cpp/neoterm.cpp.o -c /Users/mike/Documents/GitHub/ErgoMixerAndroid/app/src/main/cpp/neoterm.cpp",
+  "file": "/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/src/main/cpp/neoterm.cpp"
 }
 ]

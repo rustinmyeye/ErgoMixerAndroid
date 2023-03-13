@@ -1,3 +1,3 @@
-/Users/mike/Documents/GitHub/ErgoNode/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/rebuild_cache.dir
-/Users/mike/Documents/GitHub/ErgoNode/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/edit_cache.dir
-/Users/mike/Documents/GitHub/ErgoNode/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/neoterm.dir
+/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/.cxx/cmake/debug/arm64-v8a/CMakeFiles/neoterm.dir

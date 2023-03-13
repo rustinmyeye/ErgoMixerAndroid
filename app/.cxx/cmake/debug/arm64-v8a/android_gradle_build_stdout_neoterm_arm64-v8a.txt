@@ -1,2 +1,0 @@
-ninja: Entering directory `/Users/mike/Documents/GitHub/ErgoNode/app/.cxx/cmake/debug/arm64-v8a'
-ninja: no work to do.

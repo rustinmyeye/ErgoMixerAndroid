@@ -1,1 +1,1 @@
-/Users/mike/Documents/GitHub/ErgoNode/app/CMakeLists.txt
+/Users/mike/Documents/GitHub/ErgoMixerAndroid/app/CMakeLists.txt
