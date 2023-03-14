@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <io.neoterm.frontend.completion.MaxHeightView xmlns:android="http://schemas.android.com/apk/res/android"
-                                              android:layout_width="match_parent"
-                                              android:layout_height="match_parent"
-                                              android:background="@color/popup_background"
-                                              android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/popup_background"
+    android:orientation="vertical"
+    android:visibility="invisible">
 
   <ListView
-    android:id="@+id/popup_complete_candidate_list"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"/>
+      android:id="@+id/popup_complete_candidate_list"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:visibility="invisible" />
 
 </io.neoterm.frontend.completion.MaxHeightView>
