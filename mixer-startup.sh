@@ -33,10 +33,25 @@ echo "Please visit https://0.0.0.0.9000/dashboard to start using Ergo Mixer!"
 tmux new-session -d -s mixer_session 'java -jar mixer.jar'
 
 spinner="/|\\-/|\\-"
-while :
-do
-    for i in $(seq 0 7); do
-        echo -ne "\r${spinner:$i:1}"
-        sleep 0.1
-    done
-done
+spinner_pos=0                                          
+                                                       
+while true; do                                         
+  clear                                                
+  echo "   _____.-._____"                              
+  echo "  '-------------'"                             
+  echo "  |    (o)(0)   |"                             
+  echo "  |  o.(.--).o  |"                             
+  echo "  \  O\` ) : \`o  /"                           
+  echo "   | o.( _).O  |"                              
+  echo "    \O\` \`- 'o /"                             
+  echo -n "     |   ${spinner:spinner_pos++:1}    |"   
+  if [ $spinner_pos -eq ${#spinner} ]; then            
+    spinner_pos=0                                      
+  fi                                                   
+  echo ""                                              
+  echo "     \_______/"                                
+  echo "  .'==========='."                             
+  echo " / o o o o o o o \\ erg "                      
+  echo "'-----------------'"                           
+  sleep 0.05                                           
+done                                                   
