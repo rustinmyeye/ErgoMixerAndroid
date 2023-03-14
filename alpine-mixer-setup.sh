@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#try login
+proot-distro login alpine-ergo
+
 #download proot-distro
 apt install proot-distro -y
 clear
