@@ -15,6 +15,8 @@ chmod +x mixer.sh
 clear
 
 ##create firewall
+echo "Setting up the firewall"
+sleep 2
 
 # Flush existing rules
 iptables -F
