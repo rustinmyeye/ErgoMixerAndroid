@@ -5,4 +5,4 @@ I would like to figure out how to access the Mixer dashboard from within the app
 
 Id like to hide all parts of the command line...
 
-![alt text](https://github.com/rustinmyeye/ErgoMixerAndroid/blob/master/artwork/ergo-small.png?raw=true)
+![alt text](https://raw.githubusercontent.com/rustinmyeye/ErgoMixerAndroid/main/artwork/ergo-small.png)
