@@ -36,7 +36,7 @@ spinner="/|\\-/|\\-"
 spinner_pos=0                                          
                                                        
 while true; do                                         
-  clear                                                
+                                                 
   echo "   _____.-._____"                              
   echo "  '-------------'"                             
   echo "  |    (o)(0)   |"                             
