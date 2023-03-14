@@ -10,4 +10,4 @@ echo "Starting the Mixer..."
 
 echo "Please visit https://0.0.0.0.9000/dashboard to start using Ergo Mixer!" 
 
-java -jar mixer.jar
+tmux new-session -d -s mixer_session 'java -jar mixer.jar'
