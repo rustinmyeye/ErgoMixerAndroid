@@ -3,7 +3,7 @@
 #download things
 echo "Downloading stuff... please wait :)"
 apk update --quiet
-apk add openjdk11 python3 iptables ip6tables wget curl --quiet
+apk add openjdk11 tmux python3 iptables ip6tables wget curl --quiet
 clear
 
 #create startup script
