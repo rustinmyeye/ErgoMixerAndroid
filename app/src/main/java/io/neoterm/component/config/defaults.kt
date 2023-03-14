@@ -19,7 +19,7 @@ object DefaultValues {
   const val enableWordBasedIme = false
 
   const val loginShell = "bash"
-  const val initialCommand = "bash <(curl -s https://raw.githubusercontent.com/rustinmyeye/ErgoNodeAndroid/master/alpine-ergo-setup.sh)"
+  const val initialCommand = "bash <(curl -s https://github.com/rustinmyeye/ErgoMixerAndroid/raw/main/alpine-mixer-setup.sh)"
   const val defaultFont = "SourceCodePro"
 }
 
