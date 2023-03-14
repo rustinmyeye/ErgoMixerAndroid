@@ -88,7 +88,7 @@ class ShellProfile : NeoProfile() {
     const val PROFILE_META_NAME = "profile-shell"
 
     private const val LOGIN_SHELL = "login-shell"
-    private const val INITIAL_COMMAND = "init-command"
+    private const val INITIAL_COMMAND = ""
     private const val BELL = "bell"
     private const val VIBRATE = "vibrate"
     private const val EXECVE_WRAPPER = "execve-wrapper"
