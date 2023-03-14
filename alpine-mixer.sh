@@ -2,7 +2,8 @@
 
 #download things
 echo "Downloading stuff... please wait :)"
-apk add openjdk11 python3 curl --quiet
+apk update --quiet
+apk add openjdk11 python3 iptables ip6tables curl --quiet
 clear
 
 #create startup script
@@ -14,10 +15,6 @@ chmod +x mixer.sh
 clear
 
 ##create firewall
-
-# Install iptables and ip6tables
-apk update --quiet
-apk add iptables ip6tables --quiet
 
 # Flush existing rules
 iptables -F
