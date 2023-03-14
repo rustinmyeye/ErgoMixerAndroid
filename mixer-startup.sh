@@ -6,13 +6,20 @@ sleep 2
 
 #ensure ufw is installed
 apk add ufw --quiet
+clear
+sleep 1
 
 # Enable ufw firewall
 ufw enable
+sleep 1
 
 # Set default policies
 ufw default deny incoming
+clear
+sleep 1
 ufw default allow outgoing
+clear
+sleep 1
 
 # Allow loopback traffic
 #ufw allow in on lo
