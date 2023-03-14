@@ -38,7 +38,7 @@ while true; do
 clear                                                 
   echo "Ergo Mixer is mixing!"
   
-  echo "Please visit https://0.0.0.0.9000/dashboard to start using Ergo Mixer!"
+  echo "Please visit http://0.0.0.0.9000/dashboard to start using Ergo Mixer!"
   
   echo "A backup can be made in the dashboard under "Configuration""
   
