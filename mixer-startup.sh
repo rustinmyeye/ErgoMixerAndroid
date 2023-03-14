@@ -44,7 +44,7 @@ tmux new-session -d -s mixer_session 'java -jar mixer.jar'
 
 chars="/-\|"
 
-while :; do
+while true; do
   for (( i=0; i<${#chars}; i++ )); do
     sleep 0.5
     echo -en "${chars:$i:1}" "\r"
