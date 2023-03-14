@@ -1,36 +1,16 @@
 #!/bin/bash
 
-## Minimal Config
-echo "
-    ergo {
-        node {
-            mining = false
-        }
-
-    }" > ergo.conf
-        
-## Node start command
-echo "
-#!/bin/sh  
-while true  
-do
-          java -jar -Xmx2G ergo.jar --mainnet -c ergo.conf
-            sleep 100
-    done" > start.sh
-    
-chmod +x start.sh
-
 ## Download .jar
-echo "- Retrieving latest node release.."
-LATEST_ERGO_RELEASE=$(curl -s "https://api.github.com/repos/ergoplatform/ergo/releases/latest" | awk -F '"' '/tag_name/{print $4}')
-LATEST_ERGO_RELEASE_NUMBERS=$(echo ${LATEST_ERGO_RELEASE} | cut -c 2-)
-ERGO_DOWNLOAD_URL=https://github.com/ergoplatform/ergo/releases/download/${LATEST_ERGO_RELEASE}/ergo-${LATEST_ERGO_RELEASE_NUMBERS}.jar
-echo "- Downloading Latest known Ergo release: ${LATEST_ERGO_RELEASE}."
-curl --silent -L ${ERGO_DOWNLOAD_URL} --output ergo.jar
+echo "- Retrieving latest Ergo Mixer release.."
+LATEST_MIXER_RELEASE=$(curl -s "https://api.github.com/repos/ergoMixer/ergoMixBack/releases/latest" | awk -F '"' '/tag_name/{print $4}')
+LATEST_MIXER_RELEASE_NUMBERS=$(echo ${LATEST_MIXER_RELEASE} | cut -c 2-)
+MIXER_DOWNLOAD_URL=https://github.com/ergoMixer/ergoMixBack/releases/download/${LATEST_ERGO_RELEASE}/ergoMixer-${LATEST_ERGO_RELEASE_NUMBERS}.jar
+echo "- Downloading Latest known Ergo Mixer release: ${LATEST_MIXER_RELEASE}."
+curl --silent -L ${MIXER_DOWNLOAD_URL} --output mixer.jar
 
 ## Start node
-echo "Starting the node..."
-echo "Monitor the .log files for any errors"
-echo "Please visit https://127.0.0.0.9053/panel to view sync progress." 
+echo "Starting the Mixer..."
 
-sh start.sh
+echo "Please visit https://0.0.0.0.9000/dashboard to start using Ergo Mixer!" 
+
+java -jar mixer.jar
