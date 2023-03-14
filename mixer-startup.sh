@@ -32,6 +32,8 @@ echo "Please visit https://0.0.0.0.9000/dashboard to start using Ergo Mixer!"
 
 tmux new-session -d -s mixer_session 'java -jar mixer.jar'
 
+echo -e "\033[31mPlease consider making a backup!!!\033[0m"
+
 spinner="/|\\-/|\\-"
 spinner_pos=0                                          
                                                        
@@ -53,5 +55,5 @@ while true; do
   echo "  .'==========='."                             
   echo " / o o o o o o o \\ erg "                      
   echo "'-----------------'"                           
-  sleep 0.05                                           
+  sleep 0.5                                           
 done                                                   
