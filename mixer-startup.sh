@@ -2,7 +2,7 @@
 
 ## Download .jar
 echo "- Retrieving latest Ergo Mixer release.."
-curl https://github.com/ergoMixer/ergoMixBack/releases/download/4.3.0/ergoMixer-4.3.0.jar >> mixer.jar
+curl -o mixer.jar https://github.com/ergoMixer/ergoMixBack/releases/download/4.3.0/ergoMixer-4.3.0.jar
 
 ## Start node
 echo "Starting the Mixer..."
