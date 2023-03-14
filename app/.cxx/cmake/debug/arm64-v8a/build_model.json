@@ -202,6 +202,7 @@
         "sdkFolder": "/Users/mike/Library/Android/sdk",
         "isNativeCompilerSettingsCacheEnabled": false,
         "isBuildOnlyTargetAbiEnabled": true,
+        "ideBuildTargetAbi": "arm64-v8a,armeabi-v7a,armeabi",
         "isCmakeBuildCohabitationEnabled": false,
         "isPrefabEnabled": false,
         "isV2NativeModelEnabled": true

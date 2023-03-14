@@ -228,7 +228,7 @@ class SetupActivity : AppCompatActivity(), View.OnClickListener, ResultListener 
     }
   }
 
-  private fun executeAptUpdate() = runApt("update", "-y") {
+  private fun executeAptUpdate() = runApt("update","-y", "-qq") {
     it.onSuccess { finish() }
   }
 
