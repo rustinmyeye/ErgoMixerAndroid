@@ -40,6 +40,8 @@ clear
   
   echo "Please visit https://0.0.0.0.9000/dashboard to start using Ergo Mixer!"
   
+  echo "A backup can be made in the dashboard under "Configuration""
+  
   echo -e "\033[31mPlease consider making a backup!!!\033[0m"
   
   echo "   _____.-._____"                              
