@@ -1,8 +1,11 @@
 #!/bin/sh
 
 # Setup firewall
-echo "Setting ip firewall..."
+echo "Setting up firewall..."
 sleep 2
+
+#ensure ufw is installed
+apk add ufw --quiet
 
 # Enable ufw firewall
 ufw enable
