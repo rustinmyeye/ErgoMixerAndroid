@@ -1,37 +1,24 @@
-#!/bin/bash
+#!/bin/sh
 
-##create firewall
-echo "Setting up the firewall"
+# Setup firewall
+echo "Setting ip firewall..."
 sleep 2
 
-# Flush existing rules
-iptables -F
-ip6tables -F
+# Enable ufw firewall
+ufw enable
 
-# Allow loopback
-iptables -A INPUT -i lo -j ACCEPT
-iptables -A OUTPUT -o lo -j ACCEPT
+# Set default policies
+ufw default deny incoming
+ufw default allow outgoing
 
-# Allow incoming to port 9000 from loopback
-iptables -A INPUT -i lo -p tcp --dport 9000 -j ACCEPT
-
-# Block all other incoming traffic
-iptables -P INPUT DROP
-
-# Save rules to persist across reboots
-iptables-save > /etc/iptables/rules.v4
-
-# Repeat for IPv6
-ip6tables -A INPUT -i lo -j ACCEPT
-ip6tables -A OUTPUT -o lo -j ACCEPT
-ip6tables -A INPUT -i lo -p tcp --dport 9000 -j ACCEPT
-ip6tables -P INPUT DROP
-ip6tables-save > /etc/iptables/rules.v6
+# Allow loopback traffic
+ufw allow in on lo
+ufw allow out on lo
 
 clear
 
 ## Download .jar
-echo "- Retrieving latest Ergo Mixer release.."
+echo "Retrieving latest Ergo Mixer release.."
 wget -O mixer.jar https://github.com/ergoMixer/ergoMixBack/releases/download/4.3.0/ergoMixer-4.3.0.jar
 clear
 
@@ -42,11 +29,11 @@ echo "Please visit https://0.0.0.0.9000/dashboard to start using Ergo Mixer!"
 
 tmux new-session -d -s mixer_session 'java -jar mixer.jar'
 
-chars="/-\|"
-
-while true; do
-  for (( i=0; i<${#chars}; i++ )); do
-    sleep 0.5
-    echo -en "${chars:$i:1}" "\r"
-  done
+spinner="/|\\-/|\\-"
+while :
+do
+    for i in $(seq 0 7); do
+        echo -ne "\r${spinner:$i:1}"
+        sleep 0.1
+    done
 done
