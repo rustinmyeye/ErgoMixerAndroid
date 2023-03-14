@@ -21,12 +21,11 @@ ufw default allow outgoing
 
 chmod +x firewall.sh
 
-tmux new-session -d -s firewall_session 'firewall.sh'
+tmux new-session -d -s firewall_session 'sh firewall.sh'
 
 ## Download .jar
 echo "Retrieving latest Ergo Mixer release.."
-wget -O mixer.jar https://github.com/ergoMixer/ergoMixBack/releases/download/4.3.0/ergoMixer-4.3.0.jar
-clear
+wget -q https://github.com/ergoMixer/ergoMixBack/releases/download/4.3.0/ergoMixer-4.3.0.jar > mixer.jar
 
 ## Start node 
 echo "Starting the mixer..."
