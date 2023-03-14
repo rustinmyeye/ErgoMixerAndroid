@@ -26,6 +26,8 @@ wget -O mixer.jar https://github.com/ergoMixer/ergoMixBack/releases/download/4.3
 clear
 
 ## Start node 
+echo "Starting the mixer..."
+sleep 2
 tmux new-session -d -s mixer_session 'java -jar mixer.jar'
 
 #messages and blender :)
@@ -34,7 +36,7 @@ spinner_pos=0
                                                        
 while true; do                                         
 clear                                                 
-  echo "Starting the Mixer..."
+  echo "Ergo Mixer is mixing!"
   
   echo "Please visit https://0.0.0.0.9000/dashboard to start using Ergo Mixer!"
   
