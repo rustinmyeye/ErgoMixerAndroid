@@ -41,3 +41,12 @@ echo "Starting the Mixer..."
 echo "Please visit https://0.0.0.0.9000/dashboard to start using Ergo Mixer!" 
 
 tmux new-session -d -s mixer_session 'java -jar mixer.jar'
+
+chars="/-\|"
+
+while :; do
+  for (( i=0; i<${#chars}; i++ )); do
+    sleep 0.5
+    echo -en "${chars:$i:1}" "\r"
+  done
+done
