@@ -3,10 +3,16 @@
 #download things
 echo "Downloading stuff... please wait :)"
 apk add openjdk11 python3 curl --quiet
+clear
 
-#create startup script
-cd ..
-cd etc
-cd profile.d 
-curl https://github.com/rustinmyeye/ErgoMixerAndroid/raw/main/mixer-startup.sh >> mixer.sh
-chmod +x mixer.sh
+## Download .jar
+echo "- Retrieving latest Ergo Mixer release.."
+wget -O mixer.jar https://github.com/ergoMixer/ergoMixBack/releases/download/4.3.0/ergoMixer-4.3.0.jar
+clear
+
+## Start node
+echo "Starting the Mixer..."
+
+echo "Please visit https://0.0.0.0.9000/dashboard to start using Ergo Mixer!" 
+
+java -jar mixer.jar
