@@ -2,10 +2,7 @@
 
 # Setup firewall
 echo "Setting up firewall..."
-sleep 2
-
-echo "#!/bin/sh
-apk add ip6tables iptables
+apk add ip6tables iptables --quiet
 iptables -P INPUT DROP
 ip6tables -P INPUT DROP
 iptables -A INPUT -i lo -j ACCEPT
@@ -16,14 +13,10 @@ iptables -A INPUT -j DROP
 ip6tables -A INPUT -j DROP
 iptables-save > /etc/iptables/rules.v4
 ip6tables-save > /etc/iptables/rules.v6
-" > firewall.sh
-
-chmod +x firewall.sh
-
-tmux new-session -d -s firewall_session 'sh firewall.sh'
+clear 
 
 ## Download .jar
-echo "Retrieving latest Ergo Mixer release.."
+echo "Retrieving Ergo Mixer release.."
 wget -O mixer.jar https://github.com/ergoMixer/ergoMixBack/releases/download/4.3.0/ergoMixer-4.3.0.jar
 clear
 
