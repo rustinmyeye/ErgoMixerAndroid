@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #try login
+apt update -y
 proot-distro login alpine-ergo
 clear
 
