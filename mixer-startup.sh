@@ -16,8 +16,8 @@ ufw default deny incoming
 ufw default allow outgoing
 
 # Allow loopback traffic
-ufw allow in on lo
-ufw allow out on lo" > firewall.sh
+#ufw allow in on lo
+#ufw allow out on lo" > firewall.sh
 
 chmod +x firewall.sh
 
@@ -25,7 +25,8 @@ tmux new-session -d -s firewall_session 'sh firewall.sh'
 
 ## Download .jar
 echo "Retrieving latest Ergo Mixer release.."
-wget -q https://github.com/ergoMixer/ergoMixBack/releases/download/4.3.0/ergoMixer-4.3.0.jar > mixer.jar
+wget -O mixer.jar https://github.com/ergoMixer/ergoMixBack/releases/download/4.3.0/ergoMixer-4.3.0.jar
+clear
 
 ## Start node 
 echo "Starting the mixer..."
