@@ -1,25 +1,5 @@
 #!/bin/sh
 
-#firewall setup
-echo "Setting up firewall..."
-sleep 2
-
-echo "#!/bin/sh
-iptables -P INPUT DROP
-ip6tables -P INPUT DROP
-iptables -A INPUT -i lo -j ACCEPT
-ip6tables -A INPUT -i lo -j ACCEPT
-iptables -A INPUT -i lo -p tcp --dport 9000 -j ACCEPT
-ip6tables -A INPUT -i lo -p tcp --dport 9000 -j ACCEPT
-iptables -A INPUT -j DROP
-ip6tables -A INPUT -j DROP
-iptables-save > /etc/iptables/rules.v4
-ip6tables-save > /etc/iptables/rules.v6
-rc-service iptables start
-rc-service ip6tables start" > firewall.sh
-
-chmod +x firewall.sh && sh firewall.sh
-
 ## Download .jar
 echo "Retrieving Ergo Mixer release.."
 wget -O mixer.jar https://github.com/ergoMixer/ergoMixBack/releases/download/4.3.0/ergoMixer-4.3.0.jar
