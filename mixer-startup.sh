@@ -6,11 +6,12 @@ wget -O mixer.jar https://github.com/ergoMixer/ergoMixBack/releases/download/4.3
 clear
 
 ## create default config file
-curl https://raw.githubusercontent.com/ergoMixer/ergoMixBack/master/mixer/reference.conf > default.comf
+#curl https://raw.githubusercontent.com/ergoMixer/ergoMixBack/master/mixer/reference.conf > default.comf
 
 ## Start node 
 echo "Starting the mixer..."
-tmux new-session -d -s mixer_session 'java -jar -D"config.file"=default.conf mixer.jar'
+#tmux new-session -d -s mixer_session 'java -jar -D"config.file"=default.conf mixer.jar'
+tmux new-session -d -s mixer_session 'java -jar mixer.jar'
 sleep 10
 
 #messages and blender :)
