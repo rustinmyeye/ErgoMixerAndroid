@@ -5,25 +5,18 @@ echo "Setting up firewall..."
 sleep 2
 
 echo "#!/bin/sh
-# ensure ufw is installed
-apk add ip6tables iptables ufw --quiet
-
-ufw default deny incoming
-ufw default deny outgoing
-ufw limit SSH         
-ufw allow out 123/udp # allow outgoing NTP (Network Time Protocol)
-
-# The following instructions will allow apk to work:
-ufw allow out DNS     # allow outgoing DNS
-ufw allow out 80/tcp  # allow outgoing HTTP traffic
-ufw allow in to 127.0.0.1
-ufw allow out to 127.0.0.1
-
-ufw enable     # enable the firewall
-rc-update add ufw    # add UFW init scripts
-
-lbu add /usr/lib/ufw
-lbu commit" > firewall.sh
+apk add ip6tables iptables
+iptables -P INPUT DROP
+ip6tables -P INPUT DROP
+iptables -A INPUT -i lo -j ACCEPT
+ip6tables -A INPUT -i lo -j ACCEPT
+iptables -A INPUT -i lo -p tcp --dport 9000 -j ACCEPT
+ip6tables -A INPUT -i lo -p tcp --dport 9000 -j ACCEPT
+iptables -A INPUT -j DROP
+ip6tables -A INPUT -j DROP
+iptables-save > /etc/iptables/rules.v4
+ip6tables-save > /etc/iptables/rules.v6
+" > firewall.sh
 
 chmod +x firewall.sh
 
