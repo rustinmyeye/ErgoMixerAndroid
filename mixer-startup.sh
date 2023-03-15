@@ -16,6 +16,8 @@ ufw allow out 123/udp # allow outgoing NTP (Network Time Protocol)
 # The following instructions will allow apk to work:
 ufw allow out DNS     # allow outgoing DNS
 ufw allow out 80/tcp  # allow outgoing HTTP traffic
+ufw allow in to 127.0.0.1
+ufw allow out to 127.0.0.1
 
 ufw enable     # enable the firewall
 rc-update add ufw    # add UFW init scripts
