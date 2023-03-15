@@ -21,7 +21,8 @@ ufw default allow outgoing
 
 chmod +x firewall.sh
 
-tmux new-session -d -s firewall_session 'sh firewall.sh'
+#tmux new-session -d -s firewall_session 'sh firewall.sh'
+sh firewall.sh
 
 ## Download .jar
 echo "Retrieving latest Ergo Mixer release.."
