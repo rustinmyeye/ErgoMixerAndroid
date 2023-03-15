@@ -30,8 +30,8 @@ clear
 
 ## Start node 
 echo "Starting the mixer..."
-sleep 2
 tmux new-session -d -s mixer_session 'java -jar mixer.jar'
+sleep 10
 
 #messages and blender :)
 spinner="/|\\-/|\\-"
