@@ -16,8 +16,8 @@ ufw default deny incoming
 ufw default allow outgoing
 
 # Allow loopback traffic
-#ufw allow in on lo
-#ufw allow out on lo" > firewall.sh
+ufw allow in on lo
+ufw allow out on lo" > firewall.sh
 
 chmod +x firewall.sh
 
